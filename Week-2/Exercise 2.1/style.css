@@ -1,7 +1,7 @@
 :root {
   --blue: #173e66;
   --white: #ffffff;
-  --offwhite: #b6b6b6;
+  --offwhite: #f6f6f6;
 }
 
 html {
@@ -32,7 +32,7 @@ footer {
   color: var(--white);
   flex-shrink: 0;
   padding: 1em;
-  
+
   background-color: var(--blue);
 }
 
@@ -49,15 +49,17 @@ section.section-1 {
   max-height: 20%;
   background-color: var(--white);
   justify-content: center;
-  grid-template-columns: 2fr .5fr;
-  gap: 20px;
+  grid-template-columns: 2fr 1.5fr;
+  gap: 10px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 h3.section-1 {
   display: grid;
   padding: 0;
   margin: 0 auto;
-  grid-column: 1;
+  grid-column: 1 / span 2;
 }
 
 p.header-sub-text {
@@ -68,11 +70,11 @@ p.header-sub-text {
 
 article.section-text {
   display: -webkit-box;
-  padding: 0;
+  padding: 50px;
   font-size: 10px;
   margin: 0 auto;
   grid-column: span 3;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -91,9 +93,26 @@ div.col-1 {
 }
 
 a.section-link {
-  padding-bottom: 0;
+  
+  padding: 50px;
   position: absolute;
   bottom: 0px;
   font-weight: bold;
   color: var(--blue);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 30px;
+  width: 50%;
+}
+
+div.Title{
+  display: grid;
+  flex-direction: row !important;
+}
+input.radio {
+  display: inline;
 }
