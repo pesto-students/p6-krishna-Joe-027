@@ -1,4 +1,4 @@
-# Week 1
+#Week 1
 
 The main topics covered were basics of HTML and CSS.
 
